@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Đặt Hàng</title>
+    <link rel="stylesheet" href="/assets/css/style-checkout.css" />
+</head>
+<body>
+
+    <h1>Thông Tin Đặt Hàng</h1>
+
+    <form id="order-form">
+      <div id="selected-items">
+            <!-- Display selected items here -->
+        </div>
+
+        <label for="name">Họ và Tên:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label  for="address">Địa chỉ:</label>
+        <textarea id="address" name="address" rows="4" required></textarea>
+
+        <label for="phone">Số Điện Thoại:</label>
+        <input type="tel" id="phone" name="phone" required>
+        <div class="total-section">
+            <div id="total" class="total-price">Tổng cộng: 0 VND</div>
+        </div>    
+        <button type="submit">Xác nhận đặt hàng</button>
+    </form>
+    
+    <script src="/Backend/checkout.js"></script>
+</body>
+</html>
